@@ -44,19 +44,18 @@ def naked_twins(values):
 
     for unit in unitlist:
         twins_value = []
+        #find exact two box have the same value
         for key1 in unit:
             for key2 in unit:
                 if values[key1]==values[key2] and len(values[key1])==2 and key1!=key2:
                     twins_value.append(key1)
 
+        #make sure just two value, not three or four
         if len(twins_value)==2:
-                #print(twins_value,values[twins_value[0]],values[twins_value[1]])
                 for value in values[twins_value[0]]:  
-                    #print(value)              
                     for key in unit:
-                        #print(key,values[key])
+                        #make sure the length of value >1 to avoid reduct to blank
                         if key!=twins_value[0] and key != twins_value[1] and len(values[key])>1:
-                            #print('deal value..........',values[key],value)
                             values[key] = values[key].replace(value,'')
     print('after value......')
     display(values)

@@ -69,7 +69,7 @@ class TestNakedTwins(unittest.TestCase):
     ]
 
     def test_naked_twins(self):
-        
+        #check the matrix, my result is the exact the same as solution1[1],but test failed
         print('solution1-1..............')
         display(self.possible_solutions_1[0])
         print('solution1-2..............')
