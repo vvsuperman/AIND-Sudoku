@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: *I implement the naked twins:1. found 2 values in a unit where the 2 values have the same value, and the length of the value is 2.  2. I make sure there are only 2 value, not 3 or 4, then I search the whole unit and replace the value I found.  3. then I add Naked Twins after only_choice *
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: *I just add diag_units=[['A1','B2','C3','D4','E5','F6','G7','H8','I9'],['A9','B8','C7','D6','E5','F4','G3','H2','I1']], then add the diag_units to the unitlist*
 
 ### Install
 

@@ -1,5 +1,6 @@
 import solution
 import unittest
+from solution import *
 
 
 class TestNakedTwins(unittest.TestCase):
@@ -68,10 +69,17 @@ class TestNakedTwins(unittest.TestCase):
     ]
 
     def test_naked_twins(self):
+        
+        print('solution1-1..............')
+        display(self.possible_solutions_1[0])
+        print('solution1-2..............')
+        display(self.possible_solutions_1[1])
+        
         self.assertTrue(solution.naked_twins(self.before_naked_twins_1) in self.possible_solutions_1,
                         "Your naked_twins function produced an unexpected board.")
 
-    def test_naked_twins2(self):
+    def test_naked_twins2(self):        
+
         self.assertTrue(solution.naked_twins(self.before_naked_twins_2) in self.possible_solutions_2,
                         "Your naked_twins function produced an unexpected board.")
 
